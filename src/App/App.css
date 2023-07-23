@@ -1,0 +1,265 @@
+/* fixed properties */
+:root{
+  --offercolor:#7CB411;
+  --deletecolor :#FF3131;
+  --secondcolor : #FB2AAB;
+  /* for buttons */
+  --buttoncolor :#6699FF;
+  /* for background */
+  --firstcolor:#6596FD;
+  --onecolor :#470880;
+  --fontheads: 'Bungee', cursive;  ;
+}
+/* for all items */
+*{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color :white;
+  /* font-family: 'Bungee', cursive; */
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(150deg ,var(--onecolor), var(--firstcolor)) ;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.App {
+  padding: 25px;
+  height: 100vh ;
+}
+/* The Title  */
+.App-header {
+  display: flex;
+  height: 15vh;
+  gap: 20px;
+  align-items: center;
+}
+.App-header  h1{
+  width:90vw ;
+  font-family: var(--fontheads);
+  font-size: 60px;
+  align-items: center;
+  font-weight: 700;
+}
+.App-logo {
+  height: 70px;
+  /* margin: 20px ; */
+  /* vertical-align: middle; */
+  /* justify-content: center; */
+}
+.title{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.title h4{
+  font-size: 35px;
+  background-color: var(--firstcolor);
+  border-radius: 100%;
+  padding: 15px;
+}
+.title h1{
+  font-size: 35px;
+  color:var(--secondcolor);
+  font-family: var(--fontheads);
+  font-weight: 900;
+}
+/*  products and cart */
+.content{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* available products */
+.cards{
+ width: 55vw;
+ display: grid;
+ gap: 20px 40px;
+ grid-template-columns: repeat(3 , 28%); 
+}
+.sale{
+  border: none;
+  border-radius:20px ;
+  background-color :#6699ff76;
+  height: 330px;
+}
+.description{
+  padding:0px  10px;
+}
+.photo {
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius:20px ;
+  padding: 0px;
+
+}
+.photo img{
+  width: 100%;
+  height:100% ;
+  background-size:cover ;
+  border-radius:20px ;
+}
+.sale{
+  position: relative;
+}
+.sale h5{
+ font-size: 20px;
+}
+.sale button{
+ position: absolute;
+ transition: 0.5s;
+ bottom: 8px;
+ left: 10px;
+ right: 10px;
+ display: block;
+ background-color: var(--buttoncolor);
+ border-radius:20px ;
+ font-size: 20px;
+ padding: 7px;
+ width: 90%;
+ -webkit-transition: 0.5s;
+ -moz-transition: 0.5s;
+ -ms-transition: 0.5s;
+ -o-transition: 0.5s;
+}
+/* the CART */
+.leftSide{
+position: relative;
+}
+.my-car{
+  border-radius:30px 10px 10px 30px;
+  border: var(--buttoncolor) 2px solid;
+  height: 55vh;
+  width: 32vw;
+  overflow-y: scroll;
+}
+.numincart2{
+  background-color: var(--buttoncolor);
+  width:50px ;
+  height: 50px;
+  display: flex;
+  border-radius: 50px;
+  position: absolute;
+  right: -18px;
+  top: -18px ;
+  justify-content: center;
+  align-items: center;
+}
+.FaShoppingCart{
+  height: 25px;
+  width: 25px;
+}
+.numincart2 p{
+ background-color: white;
+ color: black;
+ font-size: 13px ;
+ width: 18px;
+ height: 18px;
+ text-align: center;
+ font-weight: 700;
+ border-radius: 100%;
+ position: absolute;
+ left:-5px ;
+ bottom: 0px;
+
+}
+.buy img{
+  width: 26%;
+  border-radius:20px;
+}
+/*  transformation ,  */
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1,1.1);
+}
+h5 ,p{
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+
+/* for total price */
+.total{
+  margin-top: 15px;
+  background-color: var(--buttoncolor);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+.total h2 {
+  color: var(--secondcolor);
+  font-weight: 500;
+  font-family: var(--fontheads);
+  font-size: 30px;
+
+}
+.total h3{
+  font-family: var(--fontheads);
+  font-size: 28px;
+  font-weight: 500;
+}
+/* global properties */
+span{
+  color: var(--offercolor);
+  font-weight: 600;
+  font-size: 18px;
+}
+sub {
+font-weight: 400;
+font-size: 15px;
+}
+del{
+  color: black;
+  font-weight: 600;
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:520px)  {
+
+  .App-header  h1{
+    font-size: 40px;
+  }
+  .cards{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2 , 48%); 
+    justify-content: center;
+   }
+    .my-car{
+      height: 55vh;
+      width: 90vw;
+    }
+
+  }
+  @media only screen and (max-width:500px) {
+    .App-header  h1{
+      font-size: 30px;
+    }
+    .cards{
+      width: 80vw;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1 , 80%); 
+     }
+
+      .my-car{
+        height: 55vh;
+        width: 90vw;
+      }
+
+    }
+

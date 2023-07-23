@@ -1,0 +1,51 @@
+  .bought{
+    height: 36%;
+    width: 100%;
+    
+  }
+  .buy{
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    justify-content:left;
+    position: relative;
+  }
+  .buy img{
+    width: 26%;
+    border-radius:20px;
+}
+  .buydescription{
+    padding: 10px 0px;
+  }
+  .buydescription h5 ,.buydescription p ,.buydescription span{
+    padding-bottom: 5px;
+  }
+  hr{
+    border: #6699ffbd 2px solid;
+    border-radius:30px;
+    width: 90%;
+    text-align: center;
+    margin: 0px 20px;
+  } 
+  .Remove{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+    border-radius:30px;
+    font-size: 15px;
+    background-color: var(--deletecolor);
+    width: 25%;
+    height: 30%;  
+  }
+  .Remove:hover{
+    background-color: white;
+    color :var(--deletecolor);
+    border: #FF3131 2px solid;
+  }
+  .bought{
+
+  }
+
+  
