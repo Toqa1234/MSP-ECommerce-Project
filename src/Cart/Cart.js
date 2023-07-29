@@ -8,6 +8,7 @@ return(
          {
             list.map((e ,idx)=> (
                 <div className={Stylecart.bought} key={idx}>
+                        <hr></hr>
                     <div className={Stylecart.buy}>
                         <img className={Stylecart.img} src={e.image} alt="shopping"/>
                         <div className={Stylecart.buydescription}>
@@ -17,7 +18,6 @@ return(
                         </div>
                         <button onClick={(e)=>deletfunction(e, idx)} className={Stylecart.Remove}>Remove</button>
                     </div>
-                    <hr></hr>
                 </div>
             
 ))}
