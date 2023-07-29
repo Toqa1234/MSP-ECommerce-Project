@@ -44,8 +44,14 @@
     color :var(--deletecolor);
     border: #FF3131 2px solid;
   }
-  .bought{
-
+@media only screen and (max-width:1000px) and (min-width:520px)  {
+    .bought{
+    height:50%;
   }
-
+}
+  @media only screen and (max-width:500px) {
+    .bought{
+     height:50%;
+  }
+  }
   
